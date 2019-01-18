@@ -8,4 +8,3 @@ IDE: Microsoft Visual studio 2010.
 
 After build the project, directly double click the Triivi.Exe file, and click ok, then you can use the system in your editing environment, such microsoft word, notepad, and etc.
 
-
