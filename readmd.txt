@@ -1,0 +1,132 @@
+8.25 发现python中前面的print会影响传值效果
+发现，输入历史如果有一些大量的新输入的内容，会影响返回值，演示时最好用原来的
+临时，在读取历史时，读取input——history111.txt文件，这样保证返回推荐主题的稳定性。该文件内容暂时不会更新。
+
+在notepad中调试python，在控制台上运行，通过后再到visual studio集成
+//判断history的size，如果超过一定长度，则启动对用户输入的主题进行检测
+
+	if (input_history.length()>50 && topicgetted==false )
+	{
+		
+	//先载入lstm的模型。
+	 outfile<<"python begin...."<<endl;
+    Py_Initialize(); /*初始化python解释器,告诉编译器要用的python编译器*/
+	 PyRun_SimpleString("import sys");
+	
+	 //传递参数 //以下测试语句可以运行
+	 /*
+	PyObject* moduleName = PyString_FromString("test001"); //模块名，不是文件名
+    PyObject* pModule = PyImport_Import(moduleName);
+
+ 	 if (!pModule) // 加载模块失败
+    {
+        AfxMessageBox(_T("加载模块1失败！"));
+        return 0;
+    }
+
+	PyObject * pFunc= PyObject_GetAttrString(pModule,"add");//Add:Python文件中的函数名    //创建参数  
+	 if (!pFunc || !PyCallable_Check(pFunc))  // 验证是否加载成功
+    {
+       AfxMessageBox(_T("加载函数1失败！"));
+        return 0;
+    }
+
+	PyObject *pArgs = PyTuple_New(2); //函数调用的参数传递均是以元组的形式打包的,2表示参数个数  
+	PyTuple_SetItem(pArgs, 0, Py_BuildValue("i", 5));//0---序号i表示创建int型变量  
+	PyTuple_SetItem(pArgs, 1, Py_BuildValue("i", 7));//1---序号//返回值  
+	PyObject *pReturn = NULL;  
+	pReturn = PyEval_CallObject(pFunc, pArgs);//调用函数  
+	//将返回值转换为int类型  
+	int result;  
+	PyArg_Parse(pReturn, "i", &result);//i表示转换成int型变量  
+	cout << "5+7 = " << result << endl;  	
+	//AfxMessageBox(_T("加载函数失败！"));
+    AfxMessageBox(result);
+	outfile2<<"python over77777777777777...."<<result<<endl;
+	*/
+	//进入正式模块
+
+	PyObject* moduleName = PyString_FromString("lstm-predict"); //模块名，不是文件名
+    PyObject* pModule = PyImport_Import(moduleName);
+
+ 	 if (!pModule) // 加载模块失败
+    {
+        AfxMessageBox(_T("加载模块2失败！"));
+        
+    }
+
+	PyObject * pFunc= PyObject_GetAttrString(pModule,"train_lstm");//Add:Python文件中的函数名    //创建参数  
+	 if (!pFunc || !PyCallable_Check(pFunc))  // 验证是否加载成功
+    {
+       AfxMessageBox(_T("加载函数2失败！"));
+       
+    }	
+
+	PyObject *pArgs = PyTuple_New(1); //函数调用的参数传递均是以元组的形式打包的,2表示参数个数  
+	PyTuple_SetItem(pArgs, 0, Py_BuildValue("s", "the food is bad and bad and bad"));//0---序号i表示创建int型变量  
+	//PyTuple_SetItem(pArgs, 1, Py_BuildValue("i", 7));//1---序号//返回值  
+	
+	PyObject *pReturn = NULL;  
+	pReturn = PyEval_CallObject(pFunc, pArgs);//调用函数  
+	//将返回值转换为int类型  
+	int result;  
+	result=9;
+	PyArg_Parse(pReturn, "i", &result);//i表示转换成int型变量  
+	cout << "result is " << result << endl;  	
+	//AfxMessageBox(_T("加载函数失败！"));
+	AfxMessageBox(_T("返回值是。。。"));
+
+	outfile<<"python over77777777777777...."<<result<<endl;
+
+    Py_Finalize(); /*结束python解释器，释放资源*/
+	topicgetted=true;
+	
+	}
+
+
+
+展示注意事项：
+1.在不同主题上下文下，但输入相同，推荐结果的不同。
+2.在用户选项设置为偏好结构以及偏好主题的两种不同情况下，相同输入，推荐结果的不同；
+3.不同级别的推荐结果。
+4.模糊扩展的展示。输入是一个不地道的英文句子，返回一个地道的句子。
+
+//以下可以运行成功，2017.8.17
+UINT GetWordHint_New(LPCSTR lpInStr,char * lpOutStrs[128], UINT iMaxCount)//获取词的提示，输入，输出 UINT CCompWindow::UpdateDicBuf()一次调用
+{
+	CString words_index(lpInStr);	
+	//outfile1<<lpInStr<<"$"<<endl;
+	if (lpInStr=="") return 0;	
+	for(UINT i=0;i<10;i++)
+	{
+		 lpOutStrs[i]="ssssssssssssssss";		
+	}	
+	//return 10;
+	
+	int count=0;
+	for(int m = 0;m < wordslen; m++)//wordslen是words.txt的size
+	   {
+		   if (count>=10) break;
+		   else if (words_index.GetLength() > words[m].GetLength() ) continue;
+	       else if (words_index == words[m].Left(words_index.GetLength()))//从词表中也截取相同长度，察看是否相当，如果相同
+		  {
+            CString temp=words[m];
+            lpOutStrs[count]="uuuuuuuuuuuu";
+            count++;
+		   }
+	   }
+	return 10;
+	
+}
+
+//2017.8.17发现如下cstring 转char *好用（vs 2010，且字符集为unicode），参见网址http://blog.csdn.net/flydream0/article/details/8543525/
+
+		//cstring转char *
+			//CString str1 =_T("123");
+			CString str1 =temp;
+			int len =WideCharToMultiByte(CP_ACP,0,str1,-1,NULL,0,NULL,NULL);
+			char *ptxtTemp =new char[len +1];
+			WideCharToMultiByte(CP_ACP,0,str1,-1,ptxtTemp,len,NULL,NULL );
+            lpOutStrs[count]=ptxtTemp;
+			//...
+			delete[] ptxtTemp;	

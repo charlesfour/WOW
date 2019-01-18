@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{edd2c10d-102f-4927-a6f6-eb9709034efc}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{7df06976-c0b5-46d7-9f70-7862e663591d}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{9e55fdbd-ad87-4245-9825-87d4430f9085}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ColorTheme.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CompWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgCompSee.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyProcess.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="msppt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="msword9.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PageAbout.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PageAdvanced.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PageDic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PageKey.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PageMain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PageSuggest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PageTrans.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProfileOp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TabSheet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolTipWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TrayPanel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TrayPanelDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="XInfoTip.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="writeassist.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="TrayPanel.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ColorTheme.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CompWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="defines.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgCompSee.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyProcess.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="msppt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="msword9.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PageAbout.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PageAdvanced.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PageDic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PageKey.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PageMain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PageSuggest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PageTrans.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProfileOp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TabSheet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolTipWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TrayPanel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TrayPanelDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TriiviCore.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="XInfoTip.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="writeassist.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\disable.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\right_t.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\TrayPanel.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\TrayPanel.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Triivi.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\wrong_t.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="readmd.txt">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="test001.py">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="Release\lstm-predict.py">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="Release\imdb.py">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="TriiviCore.lib" />
+  </ItemGroup>
+</Project>

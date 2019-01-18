@@ -1,0 +1,466 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\TrayPanel.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_TRAYPANEL_DIALOG DIALOGEX 0, 0, 324, 222
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOPMOST
+CAPTION "WINGS-E system, which is based on Triivi platform"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_TAB_MAIN,"SysTabControl32",TCS_MULTILINE,7,7,310,191
+    DEFPUSHBUTTON   "OK",IDOK,155,201,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,211,201,50,14
+    PUSHBUTTON      "Apply",IDAPPLY,267,201,50,14,WS_DISABLED
+    DEFPUSHBUTTON   "Help",IDHELP,7,201,50,14
+END
+
+IDD_DLG_MAIN DIALOGEX 0, 0, 307, 179
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Run with sysytem start",IDC_AUTORUN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,17,84,10
+    CONTROL         "Enable with program start",IDC_AUTOENABLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,98,17,97,10
+    CONTROL         "Enable balloon notification",IDC_BOOLEAN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,200,17,98,10
+    CONTROL         "",IDC_HOTKEY,"msctls_hotkey32",WS_BORDER | WS_TABSTOP,14,63,56,14
+    CONTROL         "Enable",IDC_CHECK_ENABLE,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,14,97,56,22
+    COMBOBOX        IDC_COMBO_THEME,110,52,65,62,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Shadow",IDC_CHECK_SHADOW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,143,139,38,10
+    LTEXT           "Hot key setup:",IDC_STC_HOTKEY,10,49,67,8
+    GROUPBOX        "Boot Selection",IDC_STC_BOOTSEL,7,7,293,25
+    GROUPBOX        "Theme",IDC_STC_THEME,81,36,219,136
+    GROUPBOX        "Enable Triivi",IDC_STC_ENBALL,7,36,72,85
+    COMBOBOX        IDC_COMBO_FONT,110,75,65,75,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Color:",IDC_STC_COLOR,86,54,22,8
+    LTEXT           "Font:",IDC_STC_FONT,86,77,22,8
+    LTEXT           "Size:",IDC_STC_SIZE,86,122,22,8
+    EDITTEXT        IDC_EDIT_FONTSIZE,110,120,22,12,ES_AUTOHSCROLL | ES_NUMBER,WS_EX_RIGHT
+    CONTROL         "Bold",IDC_CHECK_BOLD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,110,139,32,10
+    CONTROL         "Italic",IDC_CHECK_ITALIC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,110,155,69,10
+    COMBOBOX        IDC_COMBO_CLEAR,110,97,65,72,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Clear:",IDC_STC_CLEAR,86,99,22,8
+    LTEXT           "Triivi work mode:",IDC_STC_TWM,10,83,65,8
+    CONTROL         "",IDC_SPIN_FONT,"msctls_updown32",UDS_ARROWKEYS,133,119,11,14
+    GROUPBOX        "Language",IDC_STATIC,7,124,72,48
+    COMBOBOX        IDC_COMBO_LAN,14,146,56,49,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DLG_ADVANCED DIALOGEX 0, 0, 307, 172
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_SLI_WORDNUM,"msctls_trackbar32",TBS_NOTICKS | TBS_TOOLTIPS | WS_TABSTOP,81,29,187,15
+    CONTROL         "",IDC_SLI_PHRASENUM,"msctls_trackbar32",TBS_NOTICKS | TBS_TOOLTIPS | WS_TABSTOP,81,46,187,15
+    CONTROL         "",IDC_SLI_WORDCACHE,"msctls_trackbar32",TBS_NOTICKS | TBS_TOOLTIPS | WS_TABSTOP,81,63,187,15
+    CONTROL         "",IDC_SLI_PHRASESORT,"msctls_trackbar32",TBS_NOTICKS | TBS_TOOLTIPS | WS_TABSTOP,81,80,187,15
+    CONTROL         "",IDC_SPIN_START,"msctls_updown32",UDS_ARROWKEYS,115,118,11,14
+    CONTROL         "",IDC_SPIN_HIDE,"msctls_updown32",UDS_ARROWKEYS,115,147,11,14
+    CONTROL         "Enable Translation",IDC_CHECK_ENTRANS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,167,120,133,10
+    CONTROL         "Show Unmatched Translation",IDC_CHECK_UNMATCH,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,177,134,123,10
+    CONTROL         "Enable Professional Phrases Lib Only",IDC_CHECK_PROPHONLY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,167,150,133,10
+    EDITTEXT        IDC_EDIT_WORDNUM,278,30,22,12,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER | NOT WS_TABSTOP,WS_EX_RIGHT
+    LTEXT           "Max Word Hint Num:",IDC_STC_MWHN,10,32,72,8
+    LTEXT           "Speed<<------------------------------------>>Performance",IDC_STC_OPTI,85,17,215,8
+    EDITTEXT        IDC_EDIT_PHRASENUM,278,47,22,12,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER | NOT WS_TABSTOP,WS_EX_RIGHT
+    LTEXT           "Max Phrase Hint Num:",IDC_STC_MPHN,10,49,74,8
+    EDITTEXT        IDC_EDIT_WORDCACHE,278,64,22,12,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER | NOT WS_TABSTOP,WS_EX_RIGHT
+    LTEXT           "Word Cache Size:",IDC_STC_WDC,10,66,74,8
+    EDITTEXT        IDC_EDIT_PHRASESORT,278,81,22,12,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER | NOT WS_TABSTOP,WS_EX_RIGHT
+    LTEXT           "Phrase Sort Depth:",IDC_STC_PSD,10,83,74,8
+    GROUPBOX        "Performance",IDC_STC_PERFORM,7,7,293,95
+    GROUPBOX        "Misc",IDC_STC_MISC,7,105,293,60
+    LTEXT           "Hide Words Shorter Than:",IDC_STC_HWS,10,150,84,8
+    EDITTEXT        IDC_EDIT_HIDE,97,147,17,14,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER | NOT WS_TABSTOP
+    LTEXT           "Start Hint From Letters:",IDC_STC_SHF,10,121,77,8
+    EDITTEXT        IDC_EDIT_START,97,118,17,14,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER | NOT WS_TABSTOP
+END
+
+IDD_DLG_DIC DIALOGEX 0, 0, 307, 181
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "¡÷",IDC_BTN_UP,132,7,19,12
+    PUSHBUTTON      "¨Œ",IDC_BTN_DOWN,153,7,19,12
+    PUSHBUTTON      "Check All",IDC_BTN_CA,187,7,55,12
+    PUSHBUTTON      "Move Sel Top",IDC_BTN_UCA,243,7,55,12
+    CONTROL         "",IDC_LIST_DIC,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,7,24,185,150
+    PUSHBUTTON      "Get More Dictionaries",IDC_BTN_GETWORDDIC,197,160,103,14
+    EDITTEXT        IDC_EDIT_WORDINFO,200,31,100,54,ES_MULTILINE | ES_READONLY | NOT WS_BORDER | WS_VSCROLL,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_PHSINFO,200,99,100,54,ES_MULTILINE | ES_READONLY | NOT WS_BORDER | WS_VSCROLL,WS_EX_TRANSPARENT
+    LTEXT           "Professional dictionaries installed",IDC_STC_PDI,7,10,124,8
+    GROUPBOX        "Word Info",IDC_STC_WI,197,21,103,68
+    GROUPBOX        "Phrase Info",IDC_STC_PI,197,89,103,68
+END
+
+IDD_DLG_ABOUT DIALOGEX 0, 0, 307, 183
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_ABOUT,9,18,289,129,ES_MULTILINE | ES_READONLY | WS_VSCROLL
+    GROUPBOX        "About us",IDC_STC_ABTUS,7,7,293,142
+END
+
+IDD_DLG_COMPSEE DIALOGEX 0, 0, 65, 74
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_DLG_TRANS DIALOGEX 0, 0, 307, 181
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "¡÷",IDC_BTN_UP,132,7,19,12
+    PUSHBUTTON      "¨Œ",IDC_BTN_DOWN,153,7,19,12
+    PUSHBUTTON      "Check All",IDC_BTN_CA,187,7,55,12
+    PUSHBUTTON      "Move Sel Top",IDC_BTN_UCA,243,7,55,12
+    CONTROL         "",IDC_LIST_TRANS,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,7,24,185,150
+    PUSHBUTTON      "Get More Dictionaries",IDC_BTN_GETWORDDIC,197,160,103,14
+    LTEXT           "Translation dictionaries installed:",IDC_STC_TDI,7,9,125,8
+    GROUPBOX        "Translation Info",IDC_STC_TI,197,21,103,134
+    EDITTEXT        IDC_EDIT_INFO,199,34,101,117,ES_MULTILINE | ES_READONLY | ES_WANTRETURN | NOT WS_BORDER | WS_VSCROLL,WS_EX_TRANSPARENT
+END
+
+IDD_DLG_SUGGESTION DIALOGEX 0, 0, 307, 183
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Error Check Suggestion",IDC_STC_ECS,7,7,293,83
+    GROUPBOX        "Pronunciation Check Suggestion",IDC_STC_PCS,7,93,293,83
+    CONTROL         "Enable Error Check Suggestion",IDC_CHECK_EC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,19,281,10
+    CONTROL         "Enable Pronunciation Check Suggestion",IDC_CHECK_PC,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,110,281,10
+    LTEXT           "Start Error Check When Candidates Less Than:",IDC_STC_SEC,33,41,202,8
+    EDITTEXT        IDC_EDIT_EC,239,39,26,14,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER,WS_EX_RIGHT
+    CONTROL         "",IDC_SPIN_EC,"msctls_updown32",UDS_ARROWKEYS,268,39,11,14
+    EDITTEXT        IDC_EDIT_ECMAX,239,59,26,14,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER,WS_EX_RIGHT
+    LTEXT           "Max Error Check Suggestion Num:",IDC_STC_MECS,33,62,202,8
+    CONTROL         "",IDC_SPIN_ECMAX,"msctls_updown32",UDS_ARROWKEYS,268,59,11,14
+    LTEXT           "Start Pronunciation Check When Candidates Less Than:",IDC_STC_SPC,33,132,202,8
+    EDITTEXT        IDC_EDIT_PC,240,129,26,14,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER,WS_EX_RIGHT
+    CONTROL         "",IDC_SPIN_PC,"msctls_updown32",UDS_ARROWKEYS,268,129,11,14
+    LTEXT           "Max Pronunciation Check Suggestion Num:",IDC_STC_MPCS,33,151,203,8
+    CONTROL         "",IDC_SPIN_PCMAX,"msctls_updown32",UDS_ARROWKEYS,268,149,11,14
+    EDITTEXT        IDC_EDIT_PCMAX,240,149,26,14,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER,WS_EX_RIGHT
+END
+
+IDD_DLG_KEY DIALOGEX 0, 0, 307, 179
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Traditional Mode",IDC_RADIO_TRADITIONAL,"Button",BS_AUTORADIOBUTTON | WS_GROUP,9,22,78,10
+    CONTROL         "Modern Mode",IDC_RADIO_EXPRESS,"Button",BS_AUTORADIOBUTTON,87,22,66,10
+    CONTROL         "Append Space",IDC_CHECK_NEEDSPACE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,155,22,68,10
+    CONTROL         "Symbol Completion",IDC_CHECK_INTER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,224,22,74,10
+    COMBOBOX        IDC_COMBO_TAB,9,68,64,63,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_ENTER,122,68,64,57,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_SHIFT,235,68,64,57,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_USER_VK,9,100,64,58,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_USER_KF,122,100,64,59,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Ignore",IDC_RADIO_SUB1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,87,137,63,10
+    CONTROL         "Cursor",IDC_RADIO_SUB2,"Button",BS_AUTORADIOBUTTON,155,137,64,10
+    CONTROL         "Page",IDC_RADIO_SUB3,"Button",BS_AUTORADIOBUTTON,223,137,77,10
+    CONTROL         "Ignore",IDC_RADIO_BRA1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,87,154,65,10
+    CONTROL         "Cursor",IDC_RADIO_BRA2,"Button",BS_AUTORADIOBUTTON,155,154,65,10
+    CONTROL         "Page",IDC_RADIO_BRA3,"Button",BS_AUTORADIOBUTTON,223,154,77,10
+    LTEXT           "TAB Key Function:",IDC_STC_TKF,9,58,110,8
+    LTEXT           "Enter Key Function:",IDC_STC_EKF,122,58,111,8
+    LTEXT           "User-defined Key",IDC_STC_UDK,9,90,111,8
+    GROUPBOX        "Auto-Completion Key Setup",IDC_STC_ACKS,7,44,293,77
+    LTEXT           "Shift Key Function:",IDC_STC_SKF,236,58,62,8
+    LTEXT           "User-defined Key Function:",IDC_STC_UDKF,122,90,178,8
+    GROUPBOX        "Input Custom",IDC_STC_IC,7,7,293,33
+    GROUPBOX        "Candidate Browse",IDC_STC_CB,7,124,293,48
+    LTEXT           """- ="" Function:",IDC_STC_SF1,9,137,73,8
+    LTEXT           """[  ]"" Function:",IDC_STC_SF2,9,154,73,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "Comments", "Code Name: Summer Strike"
+            VALUE "CompanyName", "Triivi Software"
+            VALUE "FileDescription", "Triivi Control Panel"
+            VALUE "FileVersion", "1, 0, 0, 0"
+            VALUE "InternalName", "Triivi.exe"
+            VALUE "LegalCopyright", "(c) <Triivi>.  All rights reserved."
+            VALUE "OriginalFilename", "Triivi.exe"
+            VALUE "ProductName", "Triivi"
+            VALUE "ProductVersion", "1, 0, 0, 0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_TRAYPANEL_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 317
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 215
+    END
+
+    IDD_DLG_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 300
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 172
+    END
+
+    IDD_DLG_ADVANCED, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 300
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 165
+    END
+
+    IDD_DLG_DIC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 300
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 174
+    END
+
+    IDD_DLG_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 300
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_DLG_COMPSEE, DIALOG
+    BEGIN
+        RIGHTMARGIN, 62
+        BOTTOMMARGIN, 71
+    END
+
+    IDD_DLG_TRANS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 300
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 174
+    END
+
+    IDD_DLG_SUGGESTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 300
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_DLG_KEY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 300
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 172
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_POPUP MENU 
+BEGIN
+    POPUP "Popup"
+    BEGIN
+        MENUITEM "Enable/Disable",              ID_POPUP_ENABLE
+        MENUITEM "Show Config",                 ID_POPUP_SHOW
+        MENUITEM "Compatible Mode",             ID_POPUP_COMPATIBLEMODE
+        MENUITEM SEPARATOR
+        MENUITEM "Exit",                        ID_POPUP_EXIT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Triivi.ico"
+IDI_DISABLE             ICON                    "res\\disable.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DLG_MAIN DLGINIT
+BEGIN
+    IDC_COMBO_CLEAR, 0x403, 8, 0
+0x6544, 0x6166, 0x6c75, 0x0074, 
+    IDC_COMBO_CLEAR, 0x403, 16, 0
+0x6953, 0x676e, 0x656c, 0x4220, 0x7469, 0x4720, 0x6972, 0x0064, 
+    IDC_COMBO_CLEAR, 0x403, 11, 0
+0x6953, 0x676e, 0x656c, 0x4220, 0x7469, "\000" 
+    IDC_COMBO_CLEAR, 0x403, 15, 0
+0x6e41, 0x6974, 0x6c41, 0x6169, 0x2073, 0x7247, 0x6469, "\000" 
+    IDC_COMBO_CLEAR, 0x403, 10, 0
+0x6e41, 0x6974, 0x6c41, 0x6169, 0x0073, 
+    IDC_COMBO_CLEAR, 0x403, 11, 0
+0x6c43, 0x6165, 0x2072, 0x7954, 0x6570, "\000" 
+    0
+END
+
+IDD_DLG_KEY DLGINIT
+BEGIN
+    IDC_COMBO_TAB, 0x403, 7, 0
+0x6749, 0x6f6e, 0x6572, "\000" 
+    IDC_COMBO_TAB, 0x403, 17, 0
+0x7546, 0x6c6c, 0x2079, 0x6f43, 0x706d, 0x656c, 0x6974, 0x6e6f, "\000" 
+    IDC_COMBO_TAB, 0x403, 16, 0
+0x7453, 0x7065, 0x4320, 0x6d6f, 0x6c70, 0x7465, 0x6f69, 0x006e, 
+    IDC_COMBO_ENTER, 0x403, 7, 0
+0x6749, 0x6f6e, 0x6572, "\000" 
+    IDC_COMBO_ENTER, 0x403, 17, 0
+0x7546, 0x6c6c, 0x2079, 0x6f43, 0x706d, 0x656c, 0x6974, 0x6e6f, "\000" 
+    IDC_COMBO_ENTER, 0x403, 16, 0
+0x7453, 0x7065, 0x4320, 0x6d6f, 0x6c70, 0x7465, 0x6f69, 0x006e, 
+    IDC_COMBO_SHIFT, 0x403, 7, 0
+0x6749, 0x6f6e, 0x6572, "\000" 
+    IDC_COMBO_SHIFT, 0x403, 17, 0
+0x7546, 0x6c6c, 0x2079, 0x6f43, 0x706d, 0x656c, 0x6974, 0x6e6f, "\000" 
+    IDC_COMBO_SHIFT, 0x403, 16, 0
+0x7453, 0x7065, 0x4320, 0x6d6f, 0x6c70, 0x7465, 0x6f69, 0x006e, 
+    IDC_COMBO_USER_VK, 0x403, 10, 0
+0x4853, 0x4649, 0x2b54, 0x4154, 0x0042, 
+    IDC_COMBO_USER_VK, 0x403, 12, 0
+0x4853, 0x4649, 0x2b54, 0x4e45, 0x4554, 0x0052, 
+    IDC_COMBO_USER_KF, 0x403, 17, 0
+0x7546, 0x6c6c, 0x2079, 0x6f43, 0x706d, 0x656c, 0x6974, 0x6e6f, "\000" 
+    IDC_COMBO_USER_KF, 0x403, 16, 0
+0x7453, 0x7065, 0x4320, 0x6d6f, 0x6c70, 0x7465, 0x6f69, 0x006e, 
+    0
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\TrayPanel.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="TrayPanel">
+</Property><Property Name="Solution File" Value="D:\triivi 源码\Triivi 2.0\TrayPanel.sln">
+</Property><Property Name="User Options File" Value="D:\triivi 源码\Triivi 2.0\TrayPanel.suo">
+</Property><Property Name="Date" Value="2017年8月16日">
+</Property><Property Name="Time" Value="6:49">
+</Property><Property Name="Log Number" Value="2">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="TrayPanel.sln" Description="File successfully backed up as D:\triivi 源码\Triivi 2.0\TrayPanel.sln.old">
+</Event><Event ErrorLevel="0" Project="" Source="TrayPanel.suo" Description="File successfully backed up as D:\triivi 源码\Triivi 2.0\TrayPanel.suo.old">
+</Event><Event ErrorLevel="0" Project="TrayPanel" Source="TrayPanel.vcproj" Description="Converting project file 'D:\triivi 源码\Triivi 2.0\TrayPanel.vcproj'.">
+</Event><Event ErrorLevel="1" Project="TrayPanel" Source="TrayPanel.vcproj" Description="This application has been updated to include settings related to the User Account Control (UAC) feature of Windows Vista. By default, when run on Windows Vista with UAC enabled, this application is marked to run with the same privileges as the process that launched it. This marking also disables the application from running with virtualization. You can change UAC related settings from the Property Pages of the project.">
+</Event><Event ErrorLevel="1" Project="TrayPanel" Source="TrayPanel.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="TrayPanel" Source="TrayPanel.vcproj" Description="Web deployment to the local IIS server is no longer supported. The Web Deployment build tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="TrayPanel" Source="TrayPanel.vcproj" Description="MSB8012: $(TargetName) ('TrayPanel') does not match the Linker's OutputFile property value '.\Debug/Triivi.exe' ('Triivi') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetName) property value matches the value specified in %(Link.OutputFile).">
+</Event><Event ErrorLevel="1" Project="TrayPanel" Source="TrayPanel.vcproj" Description="MSB8012: $(TargetPath) ('D:\triivi 源码\Triivi 2.0\.\Debug\TrayPanel.exe') does not match the Linker's OutputFile property value '.\Debug/Triivi.exe' ('D:\triivi 源码\Triivi 2.0\Debug/Triivi.exe') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).">
+</Event><Event ErrorLevel="1" Project="TrayPanel" Source="TrayPanel.vcproj" Description="MSB8012: $(TargetName) ('TrayPanel') does not match the Linker's OutputFile property value '.\Release/Triivi.exe' ('Triivi') in project configuration 'Release|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetName) property value matches the value specified in %(Link.OutputFile).">
+</Event><Event ErrorLevel="1" Project="TrayPanel" Source="TrayPanel.vcproj" Description="MSB8012: $(TargetPath) ('D:\triivi 源码\Triivi 2.0\.\Release\TrayPanel.exe') does not match the Linker's OutputFile property value '.\Release/Triivi.exe' ('D:\triivi 源码\Triivi 2.0\Release/Triivi.exe') in project configuration 'Release|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).">
+</Event><Event ErrorLevel="0" Project="TrayPanel" Source="TrayPanel.vcproj" Description="Done converting to new project file 'D:\triivi 源码\Triivi 2.0\TrayPanel.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="TrayPanel" Source="TrayPanel.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="TrayPanel.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="TrayPanel.sln" Description="Converted">
+</Event></UpgradeLog>
